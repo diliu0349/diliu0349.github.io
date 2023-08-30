@@ -1,0 +1,13 @@
+journals([
+    {
+        "journal": "[xxx]",
+        "journal_fullname": "xxx",
+        "title": "xxx",
+        "authors": ["Di Liu"],
+        "files": [{
+            "name": "paper",
+            "path": "files/xxx.pdf"
+        }],
+        "msg": null
+    }
+])

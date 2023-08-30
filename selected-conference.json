@@ -1,0 +1,32 @@
+conferences([
+    {
+        "conference": "[MASS'23]",
+        "confernce_fullname": "the 2023 IEEE 20th International Conference on Mobile Ad Hoc and Smart Systems",
+        "title": "Efficient GPU Resource Management under Latency and Power Constraints for Deep Learning Inference",
+        "authors": ["Di Liu", "Zimo Ma", "Aolin Zhang and Kuangyu Zheng"],
+        "addtion": {
+            "rate": null,
+            "files": [{
+                "name": "paper",
+                "path": "files/MASS23-Liu.pdf"
+            }],
+            "important_msg": null,
+            "msg": null
+        }
+    },
+    {
+        "conference": "[SAGC'22]",
+        "confernce_fullname": "the 2022 International Conference on Space-air-ground Computing",
+        "title": "MagicBatch: An Energy-aware Scheduling Framework for DNN Inference on Heterogeneous Edge Servers in Space-air-ground Computation",
+        "authors": ["Di Liu", "Zimo Ma", "Aolin Zhang and Kuangyu Zheng"],
+        "addtion": {
+            "rate": null,
+            "files": [{
+                "name": "paper",
+                "path": "files/SAGC22-Liu.pdf"
+            }],
+            "important_msg": null,
+            "msg": null
+        }
+    }
+])
