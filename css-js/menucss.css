@@ -6,13 +6,14 @@
 }
 
 #menu {
-    /*width: 900px;
-    margin: 60px auto;*/
+    /* width: 795px; */
+    /* margin-left: 200px; */
     border: 1px solid #C0C0C0;
     background-color: #C0C0C0;
     background-image: linear-gradient( #0066CC, #0066CC);
     border-radius: 6px;
-    box-shadow: 0 1px 1px #C0C0C0;
+    box-shadow: 1px 1px 1px #C0C0C0;
+    text-align: center;
 }
 
 #menu:before,
@@ -30,10 +31,7 @@
 }
 
 #menu li {
-    float: left;
-    border-right: 1px solid #FFFFFF;
-    box-shadow: 1px 0 0 #303030;
-    position: relative;
+    
 }
 
 #menu a {

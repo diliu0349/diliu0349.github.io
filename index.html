@@ -28,7 +28,7 @@
         
         a {
             text-decoration: none;
-            color: #336699;
+            color: #0066CC;
         }
     </style>
 
@@ -38,63 +38,50 @@
 <body>
     <div id="outer">
         <!--header-->
-        <!-- <div id="header">
-            <div id="headercontent">
-                <a href="https://www.bupt.edu.cn/">
-                    <img style="border-style: none; border-width: 0; width: 45%; height: 20%;" src="image/bupt-logo.png" class="left" alt="BUPT Logo" />
-                </a>
-            </div>
-        </div> -->
-
-        <!-- <div>
-            <ul id="menu">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="papers.html">Papers</a></li>
-                <li><a href="service.html">Service</a></li>
-                <li><a href="awards.html">Awards&Funds</a></li>
-                <li><a href="teaching.html">Teaching</a></li>
-                <li><a href="invited-talks.html">Talks</a></li>
-                <li><a href="students.html">Group</a></li>
-            </ul>
-        </div>
-        <div id="menubottom"></div> -->
-
         <div id="content">
             <!--person-->
-            <div id="normalcontent">
-                <div class="contentarea" style="margin-left:50px; margin-right:100px;">
-                    <img src="image/photo.jpg" class="left" alt="Di Liu's personal photo" width="200" height="200" />
-                    <p>
-                        <b><font size="6">Di Liu (刘迪)</font></b>
-                        <br>
-                        <br> Master Student
-                        <br> Beihang University (BUAA)
-                        <br>
-                        <b>Email</b>: diliu AT buaa DOT edu DOT cn
-                        <br>
-                        <b>Office</b>: F929, New Main Building (新主楼), BUAA (Xueyuan Road), Haidian District, Beijing, P.R.China, 100191
-                        <br> Here is my <a target="_blank" href="files/cv-en.pdf" target="_blank">Curriculum Vitae</a>.
-                        <br>
-                    </p>
-
-                </div>
+            <div class="contentarea">
+                <img src="image/photo.jpg" class="left" alt="Di Liu's personal photo" width="240" height="240" />
+                <a href="https://www.buaa.edu.cn/">
+                    <img style="border-style: none; border-width: 0; width: 20%; height: 10%;" src="image/bhlogo.png" class="right" alt="BUAA Logo" />
+                </a>
+                <p>
+                    <br>
+                    <b><font size="5">Di Liu (刘迪)</font></b>
+                    <br>
+                    <br> Master Student
+                    <br> <a href="http://www.ee.buaa.edu.cn/index.htm">School of Electronic Information Engineering</a>
+                    <br> <a href="https://www.buaa.edu.cn">Beihang University (BUAA)</a>
+                    <br></br>
+                    <b>Email</b>: diliu AT buaa DOT edu DOT cn</br>
+                    <b>Office</b>: F929, New Main Building, BUAA (Xueyuan Road Campus)
+                    <br> Here is my <a target="_red" href="files/cv-en.pdf" >Curriculum Vitae</a>.
+                    <br></br>
+                </p>
             </div>
 
             <!--about-->
             <div class="contentarea">
                 <div id="about">
-                    <hr size="30" color="#cfd8dc">
-                    <h3>About me</h3>
-                    <p><br>
-                        I'm a master student in Beihang University (BUAA), advised by <a target="_blank" href="https://shi.buaa.edu.cn/kuangyu_zheng/zh_CN/index/40474/list/index.htm">Prof. Kuangyu Zheng</a>. I received my bachelor degrees from Beijing Jiaotong University (BJTU) in 2021.
+                    <!-- <hr size="50" color="#ffffff"> -->
+                    <p style= "text-align: center; color:black" >Welcome to Di Liu's Homepage!
+                    <p style= "text-align: center; margin-left: 3em; margin-right: 3em;" >
+                        I'm a master student in <a href="https://www.buaa.edu.cn">Beihang University</a> (BUAA), advised by <a href="https://shi.buaa.edu.cn/kuangyu_zheng/zh_CN/index/40474/list/index.htm">Prof. Kuangyu Zheng</a>. I received my bachelor degrees from <a href="https://www.bjtu.edu.cn">Beijing Jiaotong University</a> (BJTU) in 2021.
                     </p>
+
+                    <a href="#News" style="margin-left:20em; color: black;"><h4>[News]</h4></a>
+                    <a href="#Research" style="color: black;"><h4>[Research]</h4></a>
+                    <a href="#Publications" style="color: black;"><h4>[Publications]</h4></a>
+                    <a href="#Experience" style="color: black;"><h4>[Experience]</h4></a>
+
                 </div>
             </div>
 
+
             <!--    research-->
             <div class="contentarea">
-                <div id="new">
-                    <hr size="50" color="#cfd8dc">
+                <div id="News">
+                    <hr size="50" color="#fff">
                     <h3>News</h3>
                     <br></br>
                     &nbsp&nbsp&nbsp&nbsp   Jun 2023 &nbsp&nbsp&nbsp Morak accepted to MASS'23  </a>
@@ -103,8 +90,8 @@
 
             <!--    research-->
             <div class="contentarea">
-                <div id="research">
-                    <hr size="50" color="#cfd8dc">
+                <div id="Research">
+                    <hr size="50" color="#fff">
                     <h3>Research</h3>
                     <p><br>I work on machine learning systems, mobile edge intelligence, cloud computing, etc.</p>
                 </div>
@@ -113,8 +100,8 @@
 
             <!--    publication-->
             <div class="contentarea">
-                <div id="research">
-                    <hr size="50" color="#cfd8dc">
+                <div id="Publications">
+                    <hr size="50" color="#fff">
                     <h3>Publications</h3>
                     <!-- This list is incomplete: it includes only papers that lie in my research interest</br>
                     <a target="_blank" href="full-pub.html"> <b> A More Complete List </b></a> |
@@ -169,7 +156,7 @@
                                             document.write('[');
                                         else
                                             document.write(' | ');
-                                        document.write('<a  style="font-weight:bold" target="_blank" href="' + result[i].addtion.files[j].path + '">' + result[i].addtion.files[j].name + '</a>');
+                                        document.write('<a  style="font-weight:bold" href="' + result[i].addtion.files[j].path + '">' + result[i].addtion.files[j].name + '</a>');
         
                                     }
                                     document.write(']');
@@ -251,7 +238,7 @@
             <!--    experience-->
             <div class="contentarea">
                 <div id="Experience">
-                    <hr size="50" color="#cfd8dc">
+                    <hr size="50" color="#fff">
                     <h3>Experience</h3>
                     <br></br>
                     <ul>
@@ -272,13 +259,9 @@
             </div>
         </div>
     </div>
-    
-    
-
-
     <script src="./css-js/jquery-3.3.1.slim.min.js"></script>
     <script src="./css-js/popper.min.js"></script>
     <script src="./css-js/bootstrap.min.js"></script>
-    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=268&t=tt&d=eTGGRHnRbNJ0tNcqHeh9Iu6hQE6YfGGtHGa0o02IJAs'></script>
+    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=eTGGRHnRbNJ0tNcqHeh9Iu6hQE6YfGGtHGa0o02IJAs&co=2d78ad&ct=ffffff&cmo=3acc3a&cmn=ff5353'></script>
 </body>
 </html>
