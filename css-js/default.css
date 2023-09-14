@@ -284,7 +284,7 @@ ul.linklist li {
 	(so it'll take up 82% of the browser window's width). You can set it to a different percentage
 	value (70%, 90%, etc.) or even a pixel value (760px, 800px, etc.) to enforce a fixed width.
 */
-    width: 70%;
+    width: 1240px;
     /*82%;*/
     border: solid 7px #fff;
     background-color: #fff;
