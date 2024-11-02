@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css-js/bootstrap.min.css">
+    <link rel="stylesheet" href="./css-js/all.css">
+
+    <link rel="stylesheet" href="./css-js/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css-js/default.css" />
+    <link rel="stylesheet" type="text/css" href="./css-js/menucss.css" />
+
+    <style>
+        .footer {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 25%;
+            background-color: #d5d8dc;
+            color: white;
+            text-align: left;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #0066CC;
+        }
+    </style>
+
+    <title>Di Liu (刘迪)</title>
+</head>
+
+<body>
+    <div id="outer">
+        <!--header-->
+        <div id="content">
+            <!--person-->
+            <div class="contentarea">
+                <div style="display: flex; align-items: center;">
+                    <img src="image/photo.jpg" class="left" alt="Di Liu's personal photo" width="220" height="220" />
+                    
+                    <div style="flex: 1; text-align: left; padding-left: 10px; margin-top: 30px;">
+                        <strong><span style="font-size: 1.5em;">Di Liu (刘迪)</span></strong>
+                        <br></br>
+                        <span>Ph.D. Candidate</span>
+                        <br>
+                        <a href="https://www.cs.sjtu.edu.cn/">Department of Computer Science and Engineering</a>
+                        <br>
+                        <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University (SJTU)</a>
+                        <br>
+                        <strong>Email:</strong> <a href="mailto:liu-di@sjtu.edu.cn">liu-di AT sjtu DOT edu DOT cn</a>
+                        <br>
+                        <strong>Github:</strong> <a href="https://github.com/diliu0349">diliu0349</a>
+                        <br>
+                        <strong>Here is my <a href="">Curriculum Vitae</a>.</strong>
+                    </div>
+                    
+                    <a href="https://www.sjtu.edu.cn/">
+                        <img width="348" height="91.3" src="image/logo_sjtu.png" class="right" alt="SJTU Logo" />
+                    </a>
+                </div>
+                
+            </div>
+
+            <!--about-->
+            <div class="contentarea">
+                <div id="about">
+                    <!-- <hr size="50" color="#ffffff"> -->
+                    <p style= "text-align: center; color:black; margin-top: 30px;" >Welcome to Di Liu's Homepage!
+                    <p style= "text-align: left; margin-left: 0.3em;" >
+                        I am a first-year Ph.D. candidate at <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University (SJTU)</a>, fortunate to be advised by <a href="https://chenc10.github.io/">Prof. Chen Chen</a>.
+                        Previously, I obtained my master's degree and my bachelor's degree from <a href="https://www.buaa.edu.cn/">Beihang University (BUAA)</a> and <a href="https://www.bjtu.edu.cn/">Beijing Jiaotong University (BJTU)</a> in 2024 and 2021, respectively.
+                        During my first year as a Ph.D. student, I had a wonderful time working with <a href="https://hzhua.github.io/">Zhenhua Han</a>, <a href="https://hqjiang.com/">Huqiang Jiang</a>, and <a href="https://www.microsoft.com/en-us/research/people/yuqyang/">Yuqing Yang</a> from  <a href="https://www.microsoft.com/en-us/research/group/systems-research-group-asia/">System Research Group</a> at <a href="https://www.msra.cn/">Microsoft Research Asia (MSRA)</a>.
+                    </p>
+                    <a href="#News" style="margin-left:20em; color: black;"><h4>[News]</h4></a>
+                    <a href="#Research" style="color: black;"><h4>[Research]</h4></a>
+                    <a href="#Publications" style="color: black;"><h4>[Publications]</h4></a>
+                    <a href="#Internship" style="color: black;"><h4>[Internship]</h4></a>
+                </div>
+            </div>
+
+
+            <!--    research-->
+            <div class="contentarea">
+                <div id="News">
+                    <hr size="50" color="#fff">
+                    <h3>News</h3>
+                    <p></p>
+                    <div id="news-container">
+                        <div class="news-item">
+                            <div class="news-date">Oct 2024</div>
+                            <div class="news-content">RetrievalAttention accepted to NeurIPS 2024 ENLSP Workshop (<a style="color: red">Oral</a>), Congratulations!</div>
+                        </div>
+                        <div class="news-item">
+                            <div class="news-date">Jun 2024</div>
+                            <div class="news-content">Join the CSE department of SJTU as a Ph.D. student</div>
+                        </div>
+                        <div class="news-item">
+                            <div class="news-date">Feb 2024</div>
+                            <div class="news-content">join the System Research Group of MSRA as a research intern</div>
+                        </div>
+                        <!-- <div class="news-item hidden">
+                            <div class="news-date">Oct 2022</div>
+                            <div class="news-content">Research collaboration initiated.</div>
+                        </div> -->
+                    </div>
+                    <button id="toggle-button" onclick="toggleNews()" style="padding: 0; border: none; background: none; cursor: pointer; margin-left: 120px; outline: none;">More...</button>
+
+                </div>
+            </div>
+            
+            <script>
+                let isExpanded = false;
+                function toggleNews() {
+                    const hiddenItems = document.querySelectorAll('.hidden');
+                    hiddenItems.forEach(item => {
+                        item.style.display = isExpanded ? 'none' : 'flex';
+                    });
+                    document.getElementById('toggle-button').innerText = isExpanded ? 'More...' : 'Less...';
+                    isExpanded = !isExpanded;
+                }
+            </script>
+
+            <!--    research-->
+            <div class="contentarea">
+                <div id="Research">
+                    <hr size="50" color="#fff">
+                    <h3>Research</h3>
+                    <p></p>
+                        <a style="margin-left: 0.3em;">   My research interest lies in <strong>computer systems</strong>, particular in machine learing systems.</a>
+                    <p style="margin: 10px 0;"></p>
+                    <ul>
+                        <li><strong>Resource management and scheduling</strong> - to optimize resource utilization under various targets, including QoS and energy consumption (<a href="https://ieeexplore.ieee.org/abstract/document/10298565">Morak</a>).</li>
+                        <li><strong>System and algorithn co-design</strong> - to optimize LLM inference by dynamic sparse attention (<a href="https://arxiv.org/abs/2409.10516">RetrievalAttention</a>) and KV cache compression.</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!--    publication-->
+            <div class="contentarea">
+                <div id="Publications">
+                    <hr size="50" color="#fff">
+                    <h3>Publications</h3>
+                    <p></p>
+                    <script>
+                        function conferences(result) {
+                            document.write('<ul><div id="conference-example">');
+                            for (i = 0; i < result.length; i++) {
+                                document.write('<p class="pubEntry"><li><b>');
+                                // title
+                                if (result[i].conference != '[arXiv]')
+                                    document.write('<strong style="color: red">');
+                                document.write(result[i].conference);
+                                if (result[i].conference != '[arXiv]')
+                                    document.write('</strong>');
+                                document.write(' ' + result[i].title + '</b><br>');
+        
+                                // authors
+                                for (j = 0; j < result[i].authors.length; j++) {
+                                    var name = result[i].authors[j];
+                                    if (name == 'Di Liu')
+                                        document.write("<b>Di Liu</b>");
+                                    else if (name == 'Di Liu*')
+                                        document.write("<b>Di Liu*</b>");
+                                    else
+                                        document.write(name);
+                                    if (j != result[i].authors.length - 1)
+                                        document.write(',');
+                                    document.write(' ');
+                                }
+                                document.write('<br>');
+        
+                                //conference fullname & acceptance rate
+                                if (result[i].conference != "[arXiv]") {
+                                    if (result[i].addition.award != null) {
+                                        document.write(result[i].confernce_fullname + ' (<strong style="color: red;">' + result[i].addition.award + '</strong>).');
+                                    } else {
+                                        document.write('<i>' + result[i].confernce_fullname + '.</i>');
+                                    }
+                                    
+                                    if (result[i].addition.rate != null) {
+                                        document.write('<i> Acceptance rate = ' + result[i].addition.rate + '.</i><br/>');
+                                    } else {
+                                        document.write('<br/>');
+                                    }
+
+                                }
+        
+                                //files
+                                if (result[i].addition.files != null) {
+                                    for (j = 0; j < result[i].addition.files.length; j++) {
+                                        document.write('[');
+                                        document.write('<a  style="font-weight:bold" href="' + result[i].addition.files[j].path + '">' + result[i].addition.files[j].name + '</a>');
+                                        document.write(']');
+                                    }
+                                }
+                                document.write('</li>');
+                            }
+                            document.write("</div></ul>");
+                        }
+                    </script>
+                    <script type="text/javascript" src="selected-conference.json?callback=conferences"></script>
+                </div>
+            </div>
+
+            
+            <!--    Internship-->
+            <div class="contentarea">
+                <div id="Internship">
+                    <hr size="50" color="#fff">
+                    <h3>Internship</h3>
+                    <p></p>
+                    <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                        <a href="https://www.msra.cn/">
+                            <img src="image/logo_msr.jpeg" alt="MSR Logo" style="width: 200px; margin-top: 7px; margin-right: 40px;">
+                        </a>
+                        <div style="flex: 1;">
+                            <strong>Microsoft Research Asia | System Research Group |</strong> <strong style="color: rgb(111, 110, 110);">Research Intern</strong> 
+                            <br>Feb 2024 - Oct 2024</br>
+                            <strong>Mentor:</strong> <a href="https://hzhua.github.io/">Zhenhua Han</a>, <a href="https://hqjiang.com/">Huqiang Jiang</a>, and <a href="https://www.microsoft.com/en-us/research/people/yuqyang/">Yuqing Yang</a>.
+                            <br><strong>Topics:</strong> Long-context LLM inference acceleration via dynamic and sparse attention computation.</br>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                        <a href="https://www.tencent.com/">
+                        <img src="image/logo_tencent.svg" alt="Tencent Logo" style="width: 200px; margin-top: 20px; margin-right: 40px;">
+                        </a>
+                        <div style="flex: 1;">
+                            <strong>Tencent | Technology and Engineering Group |</strong> <strong style="color: rgb(111, 110, 110);">R&D Intern</strong> 
+                            <br>Jun 2023 - Oct 2023</br>
+                            <strong>Topics: </strong>Keywords analysis and query optimization in search advertising scenarios.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./css-js/jquery-3.3.1.slim.min.js"></script>
+    <script src="./css-js/popper.min.js"></script>
+    <script src="./css-js/bootstrap.min.js"></script>
+    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=250&t=tt&d=eTGGRHnRbNJ0tNcqHeh9Iu6hQE6YfGGtHGa0o02IJAs'></script>
+</body>
+</html>
